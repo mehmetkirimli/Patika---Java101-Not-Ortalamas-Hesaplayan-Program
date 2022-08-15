@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class ortalama {
+    public static void main(String[] args) {
+        //değişkenleri oluştur
+        int mat,fizik,kimya,turkce,tarih,muzik;
+
+        //scanner sınıfını tanımlıyoruz.
+        Scanner bjk = new Scanner(System.in);
+
+        //kullanıcıdan değerleri al
+        System.out.println("Matematik notunuzu girinizz pls : ");
+        mat = bjk.nextInt();
+
+        System.out.println("fizik notunuzu girinizz pls : ");
+        fizik = bjk.nextInt();
+
+        System.out.println("kimya notunuzu girinizz pls : ");
+        kimya = bjk.nextInt();
+
+        System.out.println("turkce notunuzu girinizz pls : ");
+        turkce = bjk.nextInt();
+
+        System.out.println("tarih notunuzu girinizz pls : ");
+        tarih = bjk.nextInt();
+
+        System.out.println("Muzik notunuzu girinizz pls : ");
+        muzik = bjk.nextInt();
+
+        int sonuc = (mat + fizik + kimya + tarih + turkce + muzik);
+        int ortalama = (sonuc / 6);
+        System.out.println("Tum derslerden alinan sonuclarin ortalamasi : " + ortalama);
+
+        // boolean ile true veya false dödürüldüğü için aynı koşulda geçti kaldı gibi çıktılar alınmıyor
+        //boolean kosul = ortalama>=60 ;
+        String sart = ortalama >=60 ? "sinifi gecti" : "sinifta kaldi";
+
+        System.out.println(sart);
+
+
+
+
+    }
+}
